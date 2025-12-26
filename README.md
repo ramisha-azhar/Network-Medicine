@@ -5,6 +5,10 @@ This script installs the required Bioconductor packages needed to **convert gene
 - glioblastoma_gene_list.txt- I have downloaded my gene list from the phenopedia
 Phenopedia is a literature-based database that catalogs genes associated with human diseases and phenotypes, supporting disease-gene discovery and network-based analyses.
 https://phgkb.cdc.gov/PHGKB/startPagePhenoPedia.action (this is the website)
+
+- BioMart-Ensembl https://www.ensembl.org/biomart/martview/6cbb47295e71e580879f5083bfd42e0c
+Is a BioMart query interface from Ensembl that lets us customize and download datasets based on selected filters and attributes.
+we can either enter the gene list here or use the R script to get the Entrez Gene ID 
   
 - query_Biomart -
 **Gene Symbol to Entrez Gene ID Conversion Using biomaRt**
