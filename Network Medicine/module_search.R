@@ -50,19 +50,21 @@ subgraph <- extractSubgraph(disease_gene)
 
 
 subgraph_LCC <- extractLargestConnectedComponent(subgraph)
-#this function extract the LCC of the disease gene subnetwork
-#extract from the disease gene module
+#this function extract the LCC from the disease gene subnetwork
 #it tells how many nodes and edges we have of LCC
 #NODES 309
 #EDGES 1009
 View(subgraph_LCC)
 
 ######################################
+
 random_distribution <- performIteration(iter = 100) #IF POSSIBLE 1000
 View(random_distribution)
 
 
 par_size <- computeStatistics(random_distribution$num_node_LCC,subgraph_LCC$num_node,"Size of LCC")
+View(par_size)
+
 
 par_edge <- computeStatistics(random_distribution$num_edge_LCC,subgraph_LCC$num_edge,"Number of the interactions in LCC")
 
